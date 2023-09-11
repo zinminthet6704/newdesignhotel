@@ -1,0 +1,277 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+
+h1,h2,h3{
+    font-size: 25px ;
+}
+
+
+
+img{
+    width: 100%; 
+    
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 76px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin: 0 auto; 
+    z-index: 10000;
+}
+
+.logo{
+    position: relative;
+    width: 130px;
+    top: 4px;
+    padding-bottom: 18px;
+    margin-left: 40px;
+
+}
+
+
+.nav-bar ul{
+    display: flex;
+    position: relative;
+}
+
+nav ul li a{
+    position: relative;
+   display: block;
+   font-weight: 500 ;
+   padding: 8px 20px;
+   transition: 0.2x;
+   border-radius: 30px;
+   color: #000;
+
+}
+
+
+
+nav ul li .sign:hover{
+    background-color: rgba(210, 199, 250, 0.5);  
+   
+    border-radius: 30px;
+    
+}
+
+
+
+.sign,.bookNow{
+    position: relative;
+    font-size: 17px;
+    margin-right: 80px;
+    
+}
+
+
+.bookNow{
+    background-color: rgba(210, 199, 250, 0.782);  
+}
+
+nav ul li .bookNow:hover{
+    background-color: rgba(158, 131, 255, 0.968);
+}
+
+.nav-list-container{
+    position: fixed;
+    top:75px;
+    width: 100%;
+    background-color: #f8f8f8;
+    z-index: 1000;
+   
+}
+
+.nav-list-container .navList{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto auto auto auto;
+    width: 80%;
+    margin: 0 auto 20px;
+}
+
+.navList
+{
+    
+    background-color: rgba(210, 199, 250, 0.782);
+    height: 48px;
+    border-radius: 8px ;
+}
+
+.navList li{
+   
+    text-align: center;
+    padding: 13px 0px 20px;
+}
+
+.navList li a{
+    position: relative;
+    color: #000;
+    font-size: 17px;
+}
+
+
+.navList li a:after{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: 3px;
+    width: 0;
+    left: 0;
+    color: #000;
+    bottom: -8px;
+    transition: 0.5s;
+   
+}
+.navList li a:hover:after{
+    width: 100%;
+}
+
+.event{
+    
+    margin-left: -70px;
+    position: relative;
+}
+
+.navList .event-btn{
+    /* display: inline-block; */
+    position: absolute;
+    top: 13px;
+    left: 100px;
+    border: none;
+    background-color: rgba(210, 199, 250, 0);  
+}
+
+.navList .event-btn:after{
+    content: "";
+    position: absolute;
+    color: #000;
+   background-color: black;
+   height: 3px;
+    width: 0;
+    left: 0;
+    color: #000;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.navList .event-btn:hover:after{
+    width: 100%;
+}
+
+
+
+.navList .event-menu{
+    padding: 3px 10px ;
+    height: 130px;
+    width: 200px;
+    background-color: #f8f8f8dd;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+   
+}
+ 
+.navList .event-list{
+    text-align: center;
+    padding: 10px;
+   margin-top: 10px;
+    display: block;
+    border:2px solid #000;
+    color: black;
+}
+
+.event-list:hover{
+    background-color: rgba(210, 199, 250, 1);
+    border-color: rgba(210, 199, 250, 1);
+}
+
+.event-btn:focus+.event-menu{
+    opacity: 1;
+    transform: translateY(50px);
+}
+
+
+.footer-logo{
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+section{
+    padding: 80px 13% 70px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    gap: 3.5rem;
+    position: relative;
+     left: 0;
+    right: 0;
+    bottom: 0; 
+    background-color:  #f8f8f8;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 80px;
+    
+}
+
+.footer-content h4{
+    color: #000;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+.footer-content li{
+    margin-bottom: 16px;
+}
+
+.footer-content li a{
+    display: block;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400px;
+    transition: 0.6s;
+}
+
+.footer-content li a:hover{
+    transform:  translateX(-6px);
+}
+
+.footer-content p{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
+
+.icons a{
+    font-size: 20px;
+    color: #000;
+    margin-right: 17px;
+    transition: 0.5s;
+}
+
+.icons a:hover{
+    transform: translateY(-5px);
+    display: inline-block;
+}
+
+
+
+

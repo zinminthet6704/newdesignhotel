@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h2 {
+        opacity: 0.8;
+      }
+
+      ::placeholder {
+        color: black;
+        opacity: 1;
+      }
+      #accordionExample {
+        padding: 30px;
+      }
+      .c-item {
+        height: 700px;
+      }
+
+      .c-container {
+        position: relative;
+        top: 123px;
+      }
+
+      .schedule-container {
+        position: relative;
+        bottom: -50px;
+        z-index: 100;
+        margin: 20px auto;
+        width: 80%;
+        height: 120px;
+        background-color: rgba(210, 199, 250, 1);
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        border-radius: 8px;
+      }
+
+      .check {
+        width: 150px;
+        height: 100px;
+        padding-top: 15px;
+      }
+
+      .check-in {
+        height: 100%;
+      }
+
+      .check-out {
+        height: 100%;
+      }
+
+      .adult {
+        height: 100%;
+      }
+
+      .child {
+        height: 100%;
+      }
+
+      .room {
+        height: 100%;
+      }
+
+      .check-input {
+        background-color: rgba(210, 199, 250, 1);
+        width: 100%;
+        margin-top: 15px;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        width: 120px;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- heading start -->
+
+    <header>
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./images/logo1.png" alt="hotelLogo"
+        /></a>
+      </div>
+
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li>
+            <div class="sign">
+              <a href="">
+                <i class="fa-solid fa-user"></i>
+                Sign In/Up and Save 10%
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div class="bookNow">
+              <a href="">Book Now</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="nav-list-container">
+      <ul class="navList">
+        <div class="room">
+          <li><a href="">Room</a></li>
+        </div>
+        <div class="event">
+          <button class="event-btn">Event</button>
+          <div class="event-menu">
+           
+            <a href="./celebration1.html" class="event-list">Celebration</a>
+            <a href="" class="event-list">Meeting</a>
+          </div>
+        </div>
+        <div class="restaurants">
+          <li>
+            <a href="fooddrink.html" style="margin-left: -150px">Restaurants</a>
+          </li>
+        </div>
+        <div class="s-f">
+          <li>
+            <a href="" style="margin-left: -50px">Services & Facilities</a>
+          </li>
+        </div>
+        <div class="blog">
+          <li><a href="blog.html" style="margin-left: -25px">Blog</a></li>
+        </div>
+        <div class="contact">
+          <li><a href="contact.html" style="margin-left: -25px">Contact</a></li>
+        </div>
+      </ul>
+    </div>
+    <div style="height: 80px"></div>
+
+    <!--heading ended-->
+ 
+
+
+    <!-- mainbody started -->
+
+      
+
+    <style>
+      main{
+        
+        width: 80%;
+        margin: 60px auto;
+        /* border: 1px solid green; */
+        margin-top: 80px;
+        height: auto;
+      }
+
+      .packageContainer{
+        width: 100%;
+        
+        text-align: center;
+      }
+      .package{
+        display: inline-block;
+        width: 30%;
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid green;
+        height: 400px;
+      }
+      /* .package *{
+        border: 1px solid green;
+      } */
+
+    </style>
+    <main>
+
+          <div class="packageContainer" >
+            <style>
+              .package i{
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: 30px;
+              }
+              h1{
+                text-align: center;
+              }
+              .jta{
+                display: block;
+                width: fit-content;
+                margin-left: 20%;
+                
+              }
+              .package ul li{
+                font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+                font-size: 12px;
+                line-height: 25px;
+                color: rgba(0, 232, 0, 0.9);
+                list-style: disc;
+              }
+
+            </style>
+              <div class="package">
+
+                <style>
+                  
+                </style>
+                <i class="fa fa-user"></i>
+                <br>
+                <br>
+                <hr>  
+                <br>
+                  
+                    <p style="background-color: #97e59c;color: green;border-radius: 12px;padding: 10px;" >Personal package</p>
+                  
+
+                  <br>
+                  <br>
+
+                  <div class="jta">
+
+                    <p style="font-size: 24px; margin-left: -29%;" >Pay for one time</p>
+                    <br>  
+
+
+                    <ul>
+
+                      <li>Get access to all rooms</li>
+                      <li>Door to door services</li>
+                      <li>Spa</li>
+                      <li>Hotel Events</li>
+                      <li>Business room</li>
+                      <li>Insider network</li>
+                    </ul>
+                  </div>
+
+                  <button><a href="payment.html" style="text-decoration: none; padding: 30px;">Buy it now</a></button>
+
+
+
+
+  
+  
+  
+                </div>
+                <div class="package">
+
+                  <style>
+                    
+                  </style>
+                  <i class="fa fa-business-time"></i>
+                  <br>
+                  <br>
+                  <hr>  
+                  <br>
+                    
+                      <p style="background-color: #97e59c;color: green;border-radius: 12px;padding: 10px;" >Business Package</p>
+                    
+  
+                    <br>
+                    <br>
+  
+                    <div class="jta">
+  
+                      <p style="font-size: 24px; margin-left: -29%;">Pay for one time</p>
+                      <br>  
+  
+  
+                      <ul>
+  
+                        <li>Get access to all rooms</li>
+                        <li>Door to door services</li>
+                        <li>Spa</li>
+                        <li>Hotel Events</li>
+                        <li>Business room</li>
+                        <li>Insider network</li>
+                      </ul>
+                    </div>
+  
+                    <button><a href="payment.html" style="text-decoration: none; padding: 30px;">Buy it now</a></button>
+  
+  
+  
+  
+    
+    
+    
+                  </div>
+                  <div class="package">
+
+                    <style>
+                      
+                    </style>
+                    <i class="fa fa-infinity"></i>
+                    <br>
+                    <br>
+                    <hr>  
+                    <br>
+                      
+                        <p style="background-color: #97e59c;color: green;border-radius: 12px;padding: 10px;" >Life time package</p>
+                      
+    
+                      <br>
+                      <br>
+    
+                      <div class="jta">
+    
+                        <p style="font-size: 24px; margin-left: -29%;">Pay for one time</p>
+                        <br>  
+    
+    
+                        <ul>
+    
+                          <li>Get access to all rooms</li>
+                          <li>Door to door services</li>
+                          <li>Spa</li>
+                          <li>Hotel Events</li>
+                          <li>Business room</li>
+                          <li>Insider network</li>
+                        </ul>
+                      </div>
+    
+                      <button><a href="payment.html" style="text-decoration: none; padding: 30px;">Buy it now</a></button>
+    
+    
+    
+    
+      
+      
+      
+                    </div>
+
+
+
+    
+                  </div>
+          </div>
+    </main>
+        
+
+
+
+
+
+    <!-- main body ended -->
+
+    <!-- footer start -->
+    <section class="footer">
+      <div class="footer-content">
+        <img class="footer-logo" src="./images/logo1.png" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ui
+          explicabo perspiciatis sint facere laudantium aspernatur ipsam vitae
+          possimus.
+        </p>
+
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-fw fa-facebook icon"></i></a>
+          <a href="#"><i class="fa-brands fa-fw fa-instagram icon"></i></a>
+          <a href="#"><i class="fa-brands fa-fw fa-linkedin icon"></i></a>
+          <a href="#"><i class="fa-brands fa-fw fa-twitter icon"></i></a>
+        </div>
+      </div>
+      <div class="footer-content">
+        <h4>About Us</h4>
+        <li><a href="">About Us</a></li>
+        <li><a href="">career</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Press Room</a></li>
+      </div>
+
+      <div class="footer-content">
+        <h4>Resources</h4>
+        <li><a href="">Our Work</a></li>
+        <li><a href="">services</a></li>
+        <li><a href="">FAQ</a></li>
+      </div>
+
+      <div class="footer-content">
+        <h4>Contact Us</h4>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">Contact</a></li>
+      </div>
+    </section>
+    <!-- footer end -->
+
+    <script>
+      ScrollReveal().reveal(".facility-heading", { duration: 2000 });
+      ScrollReveal().reveal(".review-head", { duration: 2000 });
+      ScrollReveal().reveal(".facility", { duration: 2000 });
+      ScrollReveal().reveal(".wel-container", { duration: 2000 });
+      ScrollReveal().reveal(".message-accordion", { duration: 2000 });
+      ScrollReveal().reveal(".card", { duration: 1000 });
+      ScrollReveal().reveal(".wrapper", { duration: 1000 });
+      ScrollReveal().reveal(".rightContainer", { duration: 1000 });
+      ScrollReveal().reveal(".b-1", { duration: 1000 });
+      ScrollReveal().reveal(".b-2", { duration: 1000 });
+      ScrollReveal().reveal(".b-3", { duration: 1000 });
+      ScrollReveal().reveal(".b-4", { duration: 1000 });
+      ScrollReveal().reveal(".b-5", { duration: 1000 });
+      ScrollReveal().reveal(".b-6", { duration: 1000 });
+    </script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
