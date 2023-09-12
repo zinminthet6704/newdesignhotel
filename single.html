@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="./zcss/roomdetails.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+<!-- 
+    <style>
+
+
+    
+            header{
+                width: 100%;
+                height: 50px;
+                margin: 10px;
+
+            }
+            
+            .container{
+                width: 72%;
+                margin: 0 auto 28px;
+                height: 100%;
+            }
+            header .container .listcontainer{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 2.43fr 4fr;
+                
+            }
+
+
+        
+        
+
+            header .container .listcontainer .link1{
+        
+                height: 50px;
+            }
+            header .container .listcontainer .link1 img{
+                width: auto;
+                height: 50px;
+            }
+        
+            header .container .listcontainer .link2{
+                width: 100%;
+                height: 50px;
+                display: grid;
+                box-sizing: border-box;
+                grid-template-columns: repeat(4, 1fr);
+                grid-column-gap: 10px;
+
+                
+        
+            }
+            header .container .listcontainer .link2 a{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    border-radius: 13px;
+                    
+                    
+
+            }
+            header .container .listcontainer .link2 a span{
+                display: inline-block;
+            
+                position: absolute;
+                top: 30%;
+                left: 30%;
+
+            }
+        
+        </style>
+        
+        
+            <header>
+                <div class="container">
+                    <div class="listcontainer">
+                        <div class="link1">
+                                <img src="images/translogo.png" alt="">
+                        </div>
+                        <div class="link2">
+                            <a href="">
+                                <span>Account</span>
+                            </a>
+                            <a href="">
+                                <span>Room</span>
+                            </a>
+        
+                            <a href="">
+                                <span>
+                                    Restaurant
+                                </span>
+                            </a>
+        
+                            <a href="">
+                                <span>Facilities</span>
+                            </a>
+
+        
+                        </div>
+                    </div>
+                    <hr>
+                    
+                </div>
+                
+            </header>
+            <br> 
+ -->
+
+
+
+        <style>
+            .maincontainer span{
+                display: inline-block;
+            }
+            .maincontainer{
+                /* border: 1px solid green; */
+            }
+
+            .maincontainer{
+                width: 100%;
+                height: 100px;
+            }
+            .formcontainer{
+                width: 100%;
+                height: 100%;
+            }
+            .maincontainer{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 2.4fr 4fr;
+                grid-gap: 12px;
+                
+            }
+
+            .maincontainer .formcontainer,
+            .maincontainer .reserve
+            {
+                width: 100%;
+                /* height: auto; */
+            }
+            
+        </style>
+    <main id="parentContainer">
+        <div id="parentroomContainer">
+            <div class="maincontainer">
+
+
+                <style>
+                    .reserve .ronecontainer,
+                    .reserve .rfirstcontainer,
+                    .reserve .rsecondcontainer,
+                    .reserve .rthirdcontainer
+                    {
+                        margin: 0 auto;
+                        width: 100%;
+                        height: auto;
+                        border: 1px solid rgb(231, 231, 231); border-radius: 12px;
+                        /* height: 400px;  */
+                        /* height 400 in testing */
+                        /* border: 1px solid green; */
+                    }
+
+                    .zborder{
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+
+                    .reserve .svgcontainer{
+                        width: 100%;
+                    }
+
+                    .svgcontainer img{
+                        width: 100%;
+                    }
+                </style>
+
+                <div class="reserve">
+
+                    <div class="svgcontainer">
+                        <img src="./zimages/booking.svg" alt="">
+                    </div>
+                    <div class="ronecontainer" style="border: 1px solid rgb(231, 231, 231); border-radius: 12px; padding-bottom: 15px;">
+                        <div class="zborder">
+                            <h2>Single room</h2>
+                            <p>Private room, any serivce wanted is granted</p>
+                            <span style="background-color: rgba(125,200,122,0.7) ; padding: 10px; border-top-left-radius: 12px;border-bottom-right-radius: 12px;">8.9</span>                         <span>Pleasant. 9234 reviews</span>
+
+                            <br>
+                            <br>
+                            <i class="fa fa-wifi-3"></i>&nbsp;Free Wifi
+                            &nbsp;
+                            <i class="fa fa-parking"></i>&nbsp;Parking
+                            &nbsp;
+                            <i class="fa fa-utensils"></i>&nbsp;Restaurant
+                            <br>
+                            <br>
+                            <i class="fa fa-swimming-pool"></i>&nbsp;Swimming Pool
+                            &nbsp;
+                        
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <style>
+                        .rchild{
+                            width: 100%;
+                            
+                        }
+                        .rchild span{
+                            display: inline-block;
+                            width: 48%;
+                            /* border: 1px solid green; */
+                        }
+
+
+
+                    </style>
+
+                    <div class="rfirstcontainer">
+                        <div class="zborder" style="padding-bottom: 17px;">
+                            <h2>Your booking details</h2>
+                            <div class="rchild">
+                                <span>
+                                    Check in
+                                    <br>
+                                    <br>    
+                                    Sat 16 Sept 2023
+                                    <br>    
+                                    <br>
+                                    From 14:00
+                                </span>
+                                <span>
+                                    Check out
+                                    <br>
+                                    <br>
+                                    Sun 17 Sept 2023
+                                    <br>
+                                    <br>
+                                        Until 12:00
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+
+                    <div class="rsecondcontainer">
+                        <div class="zborder">
+                            <style>
+                                .rschild{
+                                    width: 100%;
+                                }
+                                .rschild span{
+                                    display: inline-block;
+                                    width: 48%;
+                                }
+                                .rschild{
+                                    display: none;
+                                }
+                                .showdetail:hover ~ .rschild{
+                                    display: block;
+
+                                }
+                            </style>
+
+                                <h2>
+                                    Your price summary
+                                </h2>
+                                <style>
+                                    .cc1{
+                                        width: 100%;
+
+                                    }
+                                    .cc1 span{
+                                        width: 48%;
+                                    }
+                                </style>
+                                <div class="cc1">
+                                    <span><h4>Total cost</h4></span>
+                                    <span>13123123 MMK</span>
+                                </div>
+                                
+                                <a class="showdetail" style="border: 1px solid #97e59c; padding: 1.5%; color:#006607; border-radius: 12px;">
+                                    Show Details
+                                </a>
+                                <div class="rschild">
+                                    <br>
+                                    <span>
+                                        Fees
+                                    </span>
+                                    <span>
+                                        MMK 4500
+                                    </span>
+                                    <span>
+                                        Cleaning Fee
+                                    </span>
+                                    <span>
+                                        5600 MMK
+                                    </span>
+
+                                    <span>
+                                        Additional Fee
+                                    </span>
+                                    <span>
+                                        1200 MMK
+                                    </span>
+                                    <span>
+                                        Extra Services
+                                    </span>
+                                    <span>
+                                        1200 MMK
+                                    </span>
+                                    <span>
+                                        Hotel Services
+                                    </span>
+                                    <span>
+                                        12000 MMK 
+                                    </span>
+                                    <span>Taxes</span>
+                                    <span>10%</span>
+                                    <br>
+
+                                </div>
+
+                                <hr>
+                                <h2>Cost information</h2>
+                                <i class="fa fa-file-waveform"></i>&nbsp; Your dining fees
+                                <br>
+                                <i class="fa fa-file-waveform"></i>&nbsp; Unknown additional fee 
+                                <br>
+                                <i class="fa fa-money-bill"></i>&nbsp; Included taxes and charges
+                                <br>    
+                                <i class="fa fa-money-bill-transfer"></i>&nbsp;your card issuer may charge
+
+                                <br>
+                                <i class="fa fa-file-waveform"></i>&nbsp; You may need to pay exchange rate 
+                                <br>
+
+                                
+                                
+
+
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    
+                    <div class="rthridcontainer">
+
+                    </div>
+                
+                    
+
+                    
+                </div>
+
+
+
+
+
+
+
+                <div class="formcontainer">
+                    <style>
+                        .one{
+                            padding: 17px; 
+                            background-color: white;
+                            border: 1px solid rgb(231, 231, 231);
+                            border-radius: 12px;
+                        }
+                        .one a{
+                            text-decoration: none;
+                            color: blue;
+                        }
+                    </style>
+                    <div class="one">
+                        <i class="fa fa-user"></i> &nbsp;
+                        <a href="">Sign in</a> to book with your saved details or <a href="register.html">register</a>
+                        to manage your bookings on the go!
+                    </div>
+
+                    <hr>
+                    <div class="firstcontainer">
+                    <h2>Enter your information</h2>
+                    <span style="
+                    display: inline-block; 
+                    width: 96%; 
+                    border: 1px solid rgb(185, 166, 166);
+                    background-color: rgb(245, 245, 245);
+                    padding: 13px; 
+                    border-radius: 12px;
+
+                    ">
+                        <i class="fa fa-info-circle" style="color: rgb(126, 19, 19);"></i>&nbsp;Almost done! Just fill in the <i style="color: red;">*</i> requiered info
+                    </span>
+
+                    <div>
+
+                        <style>
+                            span input{
+                                width: 90%;
+                                border: none;
+                                border-bottom: 1px solid black;
+                                outline: none;
+                            }
+                        </style>
+                        <span style="display: inline-block; width: 49%;">
+                            <label for="fname">First name*</label>
+                            <br>
+
+                            <input type="text" id="fname">
+                        </span>
+                        
+                        <span style="display: inline-block; width: 49%; ">
+                            <br>
+                            <label for="lname">Last Name*</label>
+                            <br>
+                            <input type="text" id="lname">
+                        </span>
+                        <span style="display: inline-block; width: 49%;">
+                            <br>
+                            <label for="email">Email*</label>
+                            <br>
+                            <input type="email" id="email">
+                        </span>
+                        <span style="display: inline-block; width: 49%; ">
+                            <br>
+                            <label for="number">Phone number*</label>
+                            <br>
+                            <input type="number" id="number">
+                        </span>
+                    </div>
+
+                    <div>
+
+                        <p style="font-size: 92%; color: rgba(0,0,0,0.5)">Confirmation email goes to this address</p>
+                        <br>
+                    </div>
+
+                    <div>
+                        <label for="">Country/region</label>
+                        <br>
+
+                        <select name="country" id="" style="width:200px; height: 20px;">
+                            <option value="Mandalay">Mandalay</option>
+                            <option value="Yangon">Yangon</option>
+                            <option value="Magwe">Magwe</option>
+                            
+
+                        </select>
+                        
+                    </div>
+                    <br>
+
+                    <div class="man">
+                        <label for="">Who are you booking for?</label>
+                        <br>
+                        <input type="radio" name="mainguest" value="yes" id="main"><label for="main">I am the main guest</label>
+                        <br>
+                        
+                        <input type="radio" name="mainguest" value="no" id="nomain"><label for="nomain">Booking is for someone else</label>
+
+                        <br>
+                        <br>
+                        <label for="">Are you travelling for work?</label>
+                        <br>
+                        <input type="radio" name="travelforwork" id="forworkyes" value="yes"><label for="forworkyes">Yes</label>
+                        <br>
+                        <input type="radio" name="travelforwork" value="no" id="forworkno"><label for="forworkno">No</label>
+                        <br>
+                    </div>
+
+                    <hr>
+                    <br>
+
+                    
+
+                    
+                </div>
+
+
+
+                <style>
+                    .secondcontainer div{
+                        padding: 2px;
+                    }
+                </style>
+                <div class="secondcontainer">
+                    <h2>Single Room - includes 20% off Food and Beverage(excluding in-rooom dining)</h2>
+                    <div>
+                        <i class="fa fa-cancel"></i> &nbsp; Non-refundable
+                    </div>
+                    <div>
+                        <i class="fa fa-check"></i>&nbsp;&nbsp; Flexible to reschedule if plans change
+                    </div>                    
+                    
+                    <div>
+                        <i class="fa fa-users"></i>&nbsp; 3 adults
+                    </div>
+
+                    <div>
+                        <i class="fa fa-wand-magic-sparkles"></i>&nbsp; Cleanliness score - 7.5
+                    </div>
+
+                    <div>
+                        <i class="fa fa-smoking-ban"></i>&nbsp; No smoking
+                    </div>
+                    
+
+                    <!-- <span style="color: green;">
+                        <i class="fa fa-house"></i>&nbsp; 20 m<sup>2</sup>
+
+                    </span>
+                    <span>
+                        <i class="fa fa-snowflake"></i>&nbsp; Air conditioning
+
+                    </span>
+                    <span>
+                        <i class="fa fa-shower"></i>&nbsp; Ensuite bathroom
+
+                    </span>
+                    <span>
+                        <i class="fa fa-television"></i>&nbsp; Flat-screen TV
+
+                    </span> -->
+
+                    <style>
+                        .facicons{
+                            width: 100%;
+                            /* border: 1px solid green; */
+                            
+                        }
+
+                        .facicons .iconspec{
+                                display: inline-block;
+                                width: fit-content;
+                                
+                                margin-right: 10px;
+                                background-color: #e7fde9;
+                                border-color:#97e59c;
+                                border: 1px solid green;
+                                border-radius: 12px;
+                                color: #006607;
+                        }
+
+                        .facicons .iconspec i,
+                        .facicons .iconspec span{
+                            display: inline-block;
+                            color: #006607;
+                            font-size: 12px;
+
+                        
+                        }
+
+                    </style>
+
+                    <br>
+                    <div class="facicons">
+                        <div class="iconspec">
+                            <i class="fa fa-house"></i>
+                            <span>House</span>
+                        </div>
+                        <div class="iconspec">
+                            <i class="fa fa-snowflake"></i>
+                            <span>Snowflake</span>
+                        </div>
+                        <div class="iconspec">
+                            <i class="fa fa-shower"></i>
+                            <span>Shower</span>
+                        </div>
+                        <div class="iconspec">
+                            <i class="fa fa-television"></i>
+                            <span>Television</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <hr>
+                
+                <div class="thridcontainer">
+                    <h2>Add to your stay</h2>
+                    <input type="checkbox" name="rentcar" id="rentcar"><label for="rentcar">
+                        I am interested in renting a car
+                        
+                    </label>
+                    <br>
+                    <input type="checkbox" name="rentcar" id="longer"><label for="longer">
+                        I may stay longer than I expected
+                        
+                    </label>
+                    <br>
+                    <input type="checkbox" name="rentcar" id="attend"><label for="attend">
+                        I may attend some other's people event at hotel
+                        
+                    </label>
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <hr>
+                
+
+                <div class="forthcontainer">
+                    <h2>Special requests</h2>
+                    <p>Special requets cannot be guaranteed - but the property will do its best to meet
+                        your needs. You can always make a speicla request after your booking is complete.
+                    </p>
+
+
+                    <label for="zurequest">Please write your request in English (optional)</label>
+                    <br>
+                    <br>
+                    <textarea name="specialrequest" id="zurequest" cols="34" rows="2" style="width: 97%; outline: none;"></textarea>
+                    
+                </div>
+
+                <div style="width: 100%; text-align: right;">
+                    <button style="padding: 10px; width: 30%; background-color: #97e59c;                              
+                    border-color:#97e59c;
+                 border: 1px solid green;
+                 border-radius: 12px;
+                 color: #006607;"><a href="../room.html" style="text-decoration: none; color: green;">Cancel</a></button>
+                    <button style="padding: 10px; width: 30%; background-color: #97e59c;                              
+                       border-color:#97e59c;
+                    border: 1px solid green;
+                    border-radius: 12px;
+                    color: #006607;"><a href="done.html" style="text-decoration: none; color: green;">Reserve</a></button>
+                </div>
+
+
+            </div>
+            
+
+
+        </div>
+    </main>
+</body>
+</html>
